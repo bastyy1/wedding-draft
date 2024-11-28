@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+/* html,
+body {
+  height: 100%;
+  overflow-y: hidden;
+} */
+/* main {
+  overflow-y: hidden;
+} */
+
+/******  HEADER *******/
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 8rem;
+  background-color: #fff;
+  z-index: 1;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-basis: auto;
+  gap: 5rem;
+  margin-right: 2rem;
+  z-index: 2;
+  list-style: none;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  /* padding-bottom: 2px; */
+}
+
+.nav li a:active,
+.nav li a:hover {
+  color: #000;
+  transition: 0.5s;
+}
+
+ul li a:link,
+ul li a:visited {
+  color: #000;
+}
+/******  TIMELINE PAGE *******/
+/*  Timeline */
+.timeline-header h1 {
+  margin: 8rem 0 12rem 0;
+  font-size: 5rem;
+  text-align: center;
+  font-family: PT Sans Narrow;
+}
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  font-size: 1rem;
+  margin-top: 5rem;
+}
+.timeline div:nth-child(odd) {
+  border-right: 2px dotted goldenrod;
+}
+.arrival::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.ceremony::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.photoshout::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.lunch::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.freetime::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.party::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.timeline img {
+  max-width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.timeline .time {
+  padding-top: 2rem;
+  color: goldenrod;
+  font-style: italic;
+  font-weight: bold;
+  display: block;
+  font-size: 2rem;
+}
+.timeline .text {
+  padding-top: 3rem;
+  font-size: 3.5rem;
+  font-family: PT Sans Narrow;
+  text-transform: uppercase;
+  word-spacing: 1.2rem;
+  letter-spacing: 0.5rem;
+}
+.timeline .left {
+  text-align: right;
+  padding-right: 5rem;
+  grid-column: 1;
+}
+.timeline .right {
+  text-align: left;
+  padding-left: 5rem;
+  grid-column: 2;
+}
+.yellow-circle {
+  background-color: rgba(218, 165, 32, 0.245);
+  width: 200rem;
+  height: 200rem;
+  border-radius: 50%;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+  position: absolute;
+  top: 200%;
+  left: 20%;
+  z-index: -1;
+  /* width: 100vw;
+  height: 100vh; */
+  overflow: hidden;
+}
+
+/******  FOOTER *******/
+/* footer {
+  overflow-y: hidden;
+} */
+/* footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 0px; /* Nastavte požadovanou výšku */
+/* }  */
+footer p {
+  margin: 10rem 10rem 2rem 10rem;
+  padding-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  border-top: 2px dotted goldenrod;
+  /* z-index: 2; */
+  /* display: inline-block; */
+  /* max-width: 100rem; */
+}
